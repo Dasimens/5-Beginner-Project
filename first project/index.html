@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .header-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            place-content: center;
+            place-items: center;
+
+        }
+
+        #green {
+            background-color: green;
+            color: white
+        }
+
+        #red {
+            background-color: red;
+            color: whitesmoke;
+        }
+
+        #purple {
+            background-color: purple;
+            color: whitesmoke;
+        }
+
+        button {
+            border-radius: 5px;
+            width: 100px;
+            height: 30px;
+            margin: 5px;
+        }
+
+        button:hover {
+            transform: scale(1.09);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- COLOR FLIPPER -->
+
+    <div class="header-container">
+        <h3>Color Flipper</h3>
+    </div>
+
+    <div class="btn-wrapper">
+
+        <button id="green" onclick="setColor('green')">Green</button>
+        <button id="red" onclick="setColor('red')">Red</button>
+        <button id="purple" onclick="setColor('purple')">Purple</button>
+        <button id="random" onclick="randomColor()">Random</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <small>&copy; Dasimens Tech Limited 2025</small>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/16z21Kx49z/"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://x.com/AareExcellency1?s=08"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/aare_excellency/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yomi-olatunji-9284272a0"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/16eddf14f8.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
