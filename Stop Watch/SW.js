@@ -22,14 +22,13 @@ function startClock() {
 
 
 function stopClock() {
-clearInterval(interval);
+    clearInterval(interval);
 
 }
 
 
 function resetClock() {
-
-stopClock();
+    stopClock();
     secondElapsed = 0;
     setTime();
 
