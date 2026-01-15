@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    place-content: center;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: hsl(0, 0%, 20%);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+
+}
+
+.social-icons a:hover {
+    color: hsl(0, 0%, 50%);
+
+}
